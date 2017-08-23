@@ -2,25 +2,21 @@
 layout: default
 ---
 
-<div class="home">
+<div class="container-fluid">
+    <div class="row top-message">
 
-  {{ content }}
-
-  <h1 class="page-heading">Posts</h1>
-  
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
+    </div>
+    <div class="row intro justify-content-center">
+        <div class="col-sm-5 align-middle">
+            <img src="assets/face.png" class="img-fluid float-sm-right" alt="Thomas Talbot">
+        </div>
+        <div class="col-sm-5 jumbotron">
+            <h2 class="display-5">Hi, I am</h2>
+            <img src="assets/logo_tta_ligature.svg" width="150px" alt="Thomas Talbot">
+            <h2 class="display-5">I <strong>make</strong> cool stuff with my computer.</h2>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+        </div>
+    </div>
 </div>
