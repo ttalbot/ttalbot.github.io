@@ -16,6 +16,11 @@ header.masthead {
             font-size: 30px;
         }
     }
+    .face-container {
+        max-width: 325px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
     @media (min-width: 992px) {
         height: 100vh;
