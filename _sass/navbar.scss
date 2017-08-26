@@ -1,44 +1,43 @@
 // Styling for the navbar
 #mainNav {
     background-color: white;
-    }
-    .navbar-toggler {
-        font-size: 12px;
-        padding: 8px 10px;
-    }
-    .navbar-nav {
-        > li {
-            > a {
-                font-size: 11px;
-                &.active {
+}
+.navbar-toggler {
+    font-size: 12px;
+    padding: 8px 10px;
+}
+.navbar-nav {
+    > li {
+        > a {
+            font-size: 11px;
+            &.active {
+                background-color: transparent;
+                &:hover {
                     background-color: transparent;
-                    &:hover {
-                        background-color: transparent;
-                    }
                 }
             }
         }
     }
-    @media (min-width: 992px) {
-        border-color: transparent;
-        background-color: transparent;
-        .navbar-brand {
+}
+@media (min-width: 992px) {
+    border-color: transparent;
+    background-color: transparent;
+    .navbar-brand {
+        color: white;
+        &:hover,
+        &:focus {
             color: white;
-            &:hover,
-            &:focus {
-                color: white;
-            }
         }
-        .navbar-nav > li > a,
-        .navbar-nav > li > a:focus {
+    }
+    .navbar-nav > li > a,
+    .navbar-nav > li > a:focus {
+        color: white;
+        &:hover {
             color: white;
-            &:hover {
-                color: white;
-            }
         }
-        &.navbar-shrink {
-            border-color: white;
-            background-color: white;
-        }
+    }
+    &.navbar-shrink {
+        border-color: white;
+        background-color: white;
     }
 }
