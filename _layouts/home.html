@@ -32,15 +32,24 @@ layout: default
         <div class="col-lg-4 my-auto">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">{{post.title}}</h4>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              {{ post.excerpt }}
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+              <h4 class="card-title">{{ post.title }}</h4>
+              <h6 class="card-subtitle mb-2 text-muted">{{ post.date }}</h6>
+              {{ post.content }}
             </div>
           </div>
         </div>
       {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="download bg-primary text-center" id="download">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <h2 class="section-heading">I am a creative technologist</h2>
+        <p>with strong skills in mobile programming. Especially interested in highly interactive experiences. Fond of Android, iOS, Angular, innovative designs and ergonomics. Virtual Reality and gaming enthousiast.</p>
+      </div>
     </div>
   </div>
 </section>
