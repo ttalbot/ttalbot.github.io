@@ -21,13 +21,10 @@ header.masthead {
             font-size: 30px;
         }
     }
-    .device-container {
+    .face-container {
         max-width: 325px;
         margin-right: auto;
         margin-left: auto;
-        .screen img {
-            border-radius: 3px;
-        }
     }
     @media (min-width: 992px) {
         height: 100vh;
