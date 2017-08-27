@@ -9,9 +9,10 @@ header.masthead {
     padding-bottom: 100px;
 
     color: black;
-    background: $theme-secondary;
-    background: -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
-    background: linear-gradient(to left, $theme-secondary, $theme-tertiary);
+    //background: $theme-secondary;
+    //background: -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
+    //background: linear-gradient(to left, $theme-secondary, $theme-tertiary);
+    background: url('../assets/powder.jpg') no-repeat center center;
     .header-content {
         max-width: 500px;
         margin-bottom: 100px;
