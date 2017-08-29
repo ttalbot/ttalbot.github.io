@@ -27,15 +27,13 @@ layout: default
       <p class="text-muted">Here are the latest ones</p>
       <hr>
     </div>
-    <div class="row">
+    <div class="card-deck">
       {% for post in site.posts %}
-        <div class="col-lg-4 my-auto">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">{{ post.title }}</h4>
-              <h6 class="card-subtitle mb-2 text-muted">{{ post.date }}</h6>
-              {{ post.excerpt }}
-            </div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">{{ post.title }}</h4>
+            <h6 class="card-subtitle mb-2 text-muted">{{ post.date }}</h6>
+            {{ post.excerpt }}
           </div>
         </div>
       {% endfor %}
