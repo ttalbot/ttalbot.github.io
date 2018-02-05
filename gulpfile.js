@@ -170,6 +170,11 @@ gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
+gulp.task('publish', ['build'], () => {
+  gulp.src('dist/**/*')
+    .pipe(gulp.dest('docs'));
+});
+
 gulp.task('default', () => {
   return new Promise(resolve => {
     dev = false;
