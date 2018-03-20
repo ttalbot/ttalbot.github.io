@@ -31,8 +31,8 @@ body {
 .header h1 {
   background: transparent url('/images/logo_tta_ligature.svg') no-repeat left top;
   margin: 0;
-  width: 100px;
-  height: 60px;
+  width: 120px;
+  height: 80px;
 }
 
 /* Make the masthead heading the same height as the navigation */
@@ -94,5 +94,24 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+}
+
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 1.8s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
