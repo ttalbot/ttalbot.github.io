@@ -1,16 +1,12 @@
 .intro {
   height: 100vh;
-  background: url('../images/hacker.jpeg') no-repeat center center;
+  background: url('/public/images/hacker.jpeg') no-repeat center center;
   background-size: cover;
 
   .logo {
-    background: url('../images/logo.svg') no-repeat;
-    text-indent: -9999px;
-    width: 90px;
-    height: 90px;
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: calc(50vw - 45px);
   }
 
   .title {

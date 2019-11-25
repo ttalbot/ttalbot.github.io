@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113594056-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-113594056-1');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Thomas Talbot, creative technologist.">
-  <title>webpack starterkit</title>
+  <title>Thomas Talbot</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald:300,700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <section class="intro">
-    <div class="logo">
+    <!-- div class="logo">
       <h1>Thomas Talbot</h1>
-    </div>
-    <div class="title">
+    </div -->
+    <div class="title lax" data-lax-translate-y="0 0, vh -300">
       <span class="clipper">
         <h1 class="word">Creative</h1>
       </span>
@@ -29,7 +39,10 @@
     </div>
   </section>
 
-  <section class="web">
+  <!-- <section class="web">
+    <div class="web-image">
+      <img src="public/images/phone.jpg"/>
+    </div>
     <div class="web-text">
       <h1>App making</h1>
       <p>I help companies building web and mobile solutions with innovative designs and ergonomics.</p>
@@ -42,10 +55,36 @@
 
   <section class="make">
     <h1>Maker culture</h1>
-  </section>
+  </section> -->
 
   <section class="contact">
-    <h1>Contact, Social Networks</h1>
+        <div class="logo logo-black">
+          <h1>Thomas Talbot</h1>
+        </div>
+        <section>
+          <h6>Address</h6>
+          <address class="address">
+            <p>7 rue de l'Avre</p>
+            <p>92210 Saint-Cloud</p>
+            <p>FRANCE</p>
+          </address>
+        </section>
+        <section>
+          <h6 class="related-title">Related</h6>
+          <ul class="related-list">
+            <li><a href="https://design.fusionfabric.cloud/">Finastra Design</a></li>
+            <li><a href="https://www.electrolab.fr/">Electrolab</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLbi41Mi8RP981j51zvpCEfNg0NJsv5Vti">Balance For Better</a></li>
+          </ul>
+        </section>
+        <section>
+          <h6 class="social-title">Follow me</h6>
+          <ul class="social-list">
+            <li><a href="https://www.linkedin.com/in/ttalbot/"><img src="public/images/icons/linkedin.svg"/></a></li>
+            <li><a href="https://github.com/ttalbot"><img src="public/images/icons/github.svg"/></a></li>
+            <li><a href="https://twitter.com/tototalbot"><img src="public/images/icons/twitter.svg"/></a></li>
+          </ul>
+        </section>
   </section>
 
 </body>

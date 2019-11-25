@@ -2,24 +2,41 @@ $main-color: #6919ff;
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.2em;
+}
+
+h1, h6 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
 }
 
 h1 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 3em;
-  text-transform: uppercase;
+  font-size: 2em;
+}
+
+h6 {
+  font-size: 1em;
 }
 
 section {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
+}
+
+.logo {
+  background: url('/public/images/logo.svg') no-repeat;
+  text-indent: -9999px;
+  width: 90px;
+  height: 90px;
+}
+
+.logo-black {
+  filter: invert(1);
 }
 
 @import 'intro';
-@import 'web';
-@import 'video';
-@import 'make';
+// @import 'web';
+// @import 'video';
+// @import 'make';
 @import 'contact';
