@@ -36,7 +36,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.6.0",
+    "@babel/polyfill": "^7.8.0",
     "core-js": "^3.5.0",
     "gsap": "^3.0.4",
     "lax.js": "^1.2.5",
