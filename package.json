@@ -38,7 +38,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.10.1",
     "core-js": "^3.6.5",
-    "gsap": "^3.3.1",
+    "gsap": "^3.3.3",
     "lax.js": "^1.2.5",
     "splitting": "^1.0.6"
   }
