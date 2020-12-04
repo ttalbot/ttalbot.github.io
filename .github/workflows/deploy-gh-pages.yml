@@ -2,7 +2,8 @@ name: Deploy to gh-pages
 
 on:
   push:
-    branches: master
+    branches:
+      - master
 
 jobs:
   build:
@@ -34,3 +35,8 @@ jobs:
         BRANCH: gh-pages
         FOLDER: build
         CLEAN: true
+    - uses: GoogleCloudPlatform/release-please-action@v1.3.0
+         with:
+           token: ${{ secrets.GITHUB_TOKEN }}
+           release-type: node
+           package-name: release-please-test
